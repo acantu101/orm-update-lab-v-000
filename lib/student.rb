@@ -22,7 +22,8 @@ def self.create_table
 end
 
 def self.drop_table
-  sql = <<-SQL DROP TABLE students
+  sql = <<-SQL
+  DROP TABLE students
   SQL
   DB[:conn].execute(sql)
 end
@@ -61,7 +62,7 @@ def self.find_by_name(name)
     self.new_from_db(row)
   end.first
 end
-end
+
 
     # Remember, you can access your database connection anywhere in this class
   #  with DB[:conn]
