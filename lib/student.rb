@@ -5,9 +5,10 @@ attr_accessor :name, :grade
 attr_reader :id
 
 def initialize(id=nil, name, grade)
-  @name = name
-  @grade = grade
-  @id = id
+    @id= id
+    @name = name
+    @grade = grade
+
 
 end
 
